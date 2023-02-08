@@ -1,0 +1,67 @@
+﻿<Window x:Class="Магазин_одежды.Добавление_клиента"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Магазин_одежды"
+        mc:Ignorable="d"
+        Title="Добавление_клиента" Height="722" Width="1234" WindowStartupLocation="CenterScreen">
+    <Grid Background="#FFACACAC">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="671" Margin="306,10,0,0" VerticalAlignment="Top" Width="639" Background="White"/>
+        <TextBox x:Name="имяTxt" Text="{Binding Имя}" HorizontalAlignment="Left" Height="45" Margin="447,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="369" Background="White" FontSize="24" FontFamily="Sitka Small">
+            <TextBox.Template>
+                <ControlTemplate>
+                    <Border CornerRadius="12" Padding="2" BorderThickness="1" BorderBrush="Black">
+                        <ScrollViewer Margin="0" x:Name="PART_ContentHost" />
+                    </Border>
+                </ControlTemplate>
+            </TextBox.Template>
+        </TextBox>
+        <Label Content="Имя" HorizontalAlignment="Left" Margin="597,54,0,0" VerticalAlignment="Top" Height="34" Width="73" FontFamily="Sitka Small" FontSize="24"/>
+        <TextBox x:Name="фамилияTxt" Text="{Binding Фамилия}" HorizontalAlignment="Left" Height="45" Margin="447,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="369" Background="White" FontSize="24" FontFamily="Sitka Small">
+            <TextBox.Template>
+                <ControlTemplate>
+                    <Border CornerRadius="12" Padding="2" BorderThickness="1" BorderBrush="Black">
+                        <ScrollViewer Margin="0" x:Name="PART_ContentHost" />
+                    </Border>
+                </ControlTemplate>
+            </TextBox.Template>
+        </TextBox>
+        <Label Content="Фамилия" HorizontalAlignment="Left" Margin="569,154,0,0" VerticalAlignment="Top" Height="34" Width="128" FontFamily="Sitka Small" FontSize="24"/>
+        <TextBox x:Name="улицаTxt" Text="{Binding Улица}" HorizontalAlignment="Left" Height="45" Margin="447,293,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="369" Background="White" FontSize="24" FontFamily="Sitka Small">
+            <TextBox.Template>
+                <ControlTemplate>
+                    <Border CornerRadius="12" Padding="2" BorderThickness="1" BorderBrush="Black">
+                        <ScrollViewer Margin="0" x:Name="PART_ContentHost" />
+                    </Border>
+                </ControlTemplate>
+            </TextBox.Template>
+        </TextBox>
+        <Label Content="Улица" HorizontalAlignment="Left" Margin="585,254,0,0" VerticalAlignment="Top" Height="34" Width="85" FontFamily="Sitka Small" FontSize="24"/>
+        <TextBox x:Name="домTxt" Text="{Binding Дом}" HorizontalAlignment="Left" Height="45" Margin="447,393,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="369" Background="White" FontSize="24" FontFamily="Sitka Small">
+            <TextBox.Template>
+                <ControlTemplate>
+                    <Border CornerRadius="12" Padding="2" BorderThickness="1" BorderBrush="Black">
+                        <ScrollViewer Margin="0" x:Name="PART_ContentHost" />
+                    </Border>
+                </ControlTemplate>
+            </TextBox.Template>
+        </TextBox>
+        <Label Content="Дом" HorizontalAlignment="Left" Margin="597,354,0,0" VerticalAlignment="Top" Height="34" Width="61" FontFamily="Sitka Small" FontSize="24"/>
+        <Button Content="Добавить клиента" HorizontalAlignment="Left" Margin="413,601,0,0" VerticalAlignment="Top" Width="430" Height="45" FontFamily="Sitka Small" FontSize="24" Background="#FF9CECB5" Click="Button_Click"/>
+        <TextBox x:Name="телефонTxt" Text="{Binding Телефон}" HorizontalAlignment="Left" Height="45" Margin="447,508,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="369" Background="White" FontSize="24" FontFamily="Sitka Small">
+            <TextBox.Template>
+                <ControlTemplate>
+                    <Border CornerRadius="12" Padding="2" BorderThickness="1" BorderBrush="Black">
+                        <ScrollViewer Margin="0" x:Name="PART_ContentHost" />
+                    </Border>
+                </ControlTemplate>
+            </TextBox.Template>
+        </TextBox>
+        <Label Content="Телефон" HorizontalAlignment="Left" Margin="569,469,0,0" VerticalAlignment="Top" Height="34" Width="116" FontFamily="Sitka Small" FontSize="24"/>
+        <Button HorizontalAlignment="Left" Margin="1126,601,0,0" VerticalAlignment="Top" Width="90" Height="80" Background="#FF9CECB5">
+            <Image Height="70" Source="icons8-вернуть-100.png" Stretch="Fill" Width="80"/>
+        </Button>
+
+    </Grid>
+</Window>

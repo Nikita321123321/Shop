@@ -1,0 +1,77 @@
+﻿<Window x:Class="Магазин_одежды.Добваление_товара"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Магазин_одежды"
+        mc:Ignorable="d"
+        Title="Добваление_товара" Height="722" Width="1234" WindowStartupLocation="CenterScreen">
+    <Grid Background="#FFACACAC">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="671" Margin="306,10,0,0" VerticalAlignment="Top" Width="639" Background="White"/>
+        <TextBox x:Name="товарTxt" Text="{Binding Код_товары}" HorizontalAlignment="Left" Height="45" Margin="442,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="369" Background="White" FontSize="24" FontFamily="Sitka Small">
+            <TextBox.Template>
+                <ControlTemplate>
+                    <Border CornerRadius="12" Padding="2" BorderThickness="1" BorderBrush="Black">
+                        <ScrollViewer Margin="0" x:Name="PART_ContentHost" />
+                    </Border>
+                </ControlTemplate>
+            </TextBox.Template>
+        </TextBox>
+        <Label Content="Вид товара" HorizontalAlignment="Left" Margin="553,100,0,0" VerticalAlignment="Top" Height="34" Width="152" FontFamily="Sitka Small" FontSize="24"/>
+        <TextBox x:Name="украшениеTxt" Text="{Binding Код_украшения}" HorizontalAlignment="Left" Height="45" Margin="442,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="369" Background="White" FontSize="24" FontFamily="Sitka Small">
+            <TextBox.Template>
+                <ControlTemplate>
+                    <Border CornerRadius="12" Padding="2" BorderThickness="1" BorderBrush="Black">
+                        <ScrollViewer Margin="0" x:Name="PART_ContentHost" />
+                    </Border>
+                </ControlTemplate>
+            </TextBox.Template>
+        </TextBox>
+        <Label Content="Украшение" HorizontalAlignment="Left" Margin="553,200,0,0" VerticalAlignment="Top" Height="34" Width="152" FontFamily="Sitka Small" FontSize="24"/>
+        <TextBox x:Name="рисунокTxt" Text="{Binding Ресунок_украшения}" HorizontalAlignment="Left" Height="45" Margin="442,339,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="369" Background="White" FontSize="24" FontFamily="Sitka Small">
+            <TextBox.Template>
+                <ControlTemplate>
+                    <Border CornerRadius="12" Padding="2" BorderThickness="1" BorderBrush="Black">
+                        <ScrollViewer Margin="0" x:Name="PART_ContentHost" />
+                    </Border>
+                </ControlTemplate>
+            </TextBox.Template>
+        </TextBox>
+        <Label Content="Рисунок украшения" HorizontalAlignment="Left" Margin="496,300,0,0" VerticalAlignment="Top" Height="34" Width="271" FontFamily="Sitka Small" FontSize="24"/>
+        <TextBox x:Name="производительTxt" Text="{Binding Код_Производители}" HorizontalAlignment="Left" Height="45" Margin="442,439,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="369" Background="White" FontSize="24" FontFamily="Sitka Small">
+            <TextBox.Template>
+                <ControlTemplate>
+                    <Border CornerRadius="12" Padding="2" BorderThickness="1" BorderBrush="Black">
+                        <ScrollViewer Margin="0" x:Name="PART_ContentHost" />
+                    </Border>
+                </ControlTemplate>
+            </TextBox.Template>
+        </TextBox>
+        <Label Content="Производитель " HorizontalAlignment="Left" Margin="524,400,0,0" VerticalAlignment="Top" Height="34" Width="209" FontFamily="Sitka Small" FontSize="24"/>
+        <Button Content="Добавить товар" HorizontalAlignment="Left" Margin="414,557,0,0" VerticalAlignment="Top" Width="430" Height="45" FontFamily="Sitka Small" FontSize="24" Background="#FF9CECB5" Click="Button_Click_1"/>
+        <Button HorizontalAlignment="Left" Margin="1126,601,0,0" VerticalAlignment="Top" Width="90" Height="80" Background="#FF9CECB5" Click="Button_Click">
+            <Image Height="70" Source="icons8-вернуть-100.png" Stretch="Fill" Width="80"/>
+        </Button>
+        <Image Margin="21,289,948,132" Source="a7dd971c8f0207456e3a76af30364976.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Opacity="0.69">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-5.004"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Margin="959,47,13,332" Source="60f2deb71e236771b8236899-1.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Opacity="0.69">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="1.039"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+    </Grid>
+</Window>

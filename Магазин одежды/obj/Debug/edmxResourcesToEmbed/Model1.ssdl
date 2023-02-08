@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище Model" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Готовые_товары">
+    <Key>
+      <PropertyRef Name="Код" />
+    </Key>
+    <Property Name="Код" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Код_Товары" Type="int" />
+    <Property Name="Код_Украшения" Type="int" />
+    <Property Name="Ресунок_украшения" Type="nchar" MaxLength="30" />
+    <Property Name="Код_Производители" Type="int" />
+  </EntityType>
+  <EntityType Name="Доставка">
+    <Key>
+      <PropertyRef Name="Код" />
+    </Key>
+    <Property Name="Код" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Код_Клиент" Type="int" />
+    <Property Name="Код_Готовые_товары" Type="int" />
+    <Property Name="Дата_доставки" Type="nchar" MaxLength="30" />
+    <Property Name="Время_доставки" Type="nchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="Клиент">
+    <Key>
+      <PropertyRef Name="Код" />
+    </Key>
+    <Property Name="Код" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Имя" Type="nchar" MaxLength="30" />
+    <Property Name="Фамилия" Type="nchar" MaxLength="30" />
+    <Property Name="Улица" Type="nchar" MaxLength="30" />
+    <Property Name="Дом" Type="int" />
+    <Property Name="Телефон" Type="nchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="Производители">
+    <Key>
+      <PropertyRef Name="Код" />
+    </Key>
+    <Property Name="Код" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Производитель" Type="nchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="Товары">
+    <Key>
+      <PropertyRef Name="Код" />
+    </Key>
+    <Property Name="Код" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Вид_товара" Type="nchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="Украшения">
+    <Key>
+      <PropertyRef Name="Код" />
+    </Key>
+    <Property Name="Код" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Украшение" Type="nchar" MaxLength="30" />
+  </EntityType>
+  <Association Name="FK_Готовые_товары_Производители">
+    <End Role="Производители" Type="Self.Производители" Multiplicity="0..1" />
+    <End Role="Готовые_товары" Type="Self.Готовые_товары" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Производители">
+        <PropertyRef Name="Код" />
+      </Principal>
+      <Dependent Role="Готовые_товары">
+        <PropertyRef Name="Код_Производители" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Готовые_товары_Товары">
+    <End Role="Товары" Type="Self.Товары" Multiplicity="0..1" />
+    <End Role="Готовые_товары" Type="Self.Готовые_товары" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Товары">
+        <PropertyRef Name="Код" />
+      </Principal>
+      <Dependent Role="Готовые_товары">
+        <PropertyRef Name="Код_Товары" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Готовые_товары_Украшения">
+    <End Role="Украшения" Type="Self.Украшения" Multiplicity="0..1" />
+    <End Role="Готовые_товары" Type="Self.Готовые_товары" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Украшения">
+        <PropertyRef Name="Код" />
+      </Principal>
+      <Dependent Role="Готовые_товары">
+        <PropertyRef Name="Код_Украшения" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Доставка_Готовые_товары">
+    <End Role="Готовые_товары" Type="Self.Готовые_товары" Multiplicity="0..1" />
+    <End Role="Доставка" Type="Self.Доставка" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Готовые_товары">
+        <PropertyRef Name="Код" />
+      </Principal>
+      <Dependent Role="Доставка">
+        <PropertyRef Name="Код_Готовые_товары" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Доставка_Клиент">
+    <End Role="Клиент" Type="Self.Клиент" Multiplicity="0..1" />
+    <End Role="Доставка" Type="Self.Доставка" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Клиент">
+        <PropertyRef Name="Код" />
+      </Principal>
+      <Dependent Role="Доставка">
+        <PropertyRef Name="Код_Клиент" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище ModelContainer">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Готовые_товары" EntityType="Self.Готовые_товары" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Доставка" EntityType="Self.Доставка" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Клиент" EntityType="Self.Клиент" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Производители" EntityType="Self.Производители" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Товары" EntityType="Self.Товары" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Украшения" EntityType="Self.Украшения" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Готовые_товары_Производители" Association="Self.FK_Готовые_товары_Производители">
+      <End Role="Производители" EntitySet="Производители" />
+      <End Role="Готовые_товары" EntitySet="Готовые_товары" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Готовые_товары_Товары" Association="Self.FK_Готовые_товары_Товары">
+      <End Role="Товары" EntitySet="Товары" />
+      <End Role="Готовые_товары" EntitySet="Готовые_товары" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Готовые_товары_Украшения" Association="Self.FK_Готовые_товары_Украшения">
+      <End Role="Украшения" EntitySet="Украшения" />
+      <End Role="Готовые_товары" EntitySet="Готовые_товары" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Доставка_Готовые_товары" Association="Self.FK_Доставка_Готовые_товары">
+      <End Role="Готовые_товары" EntitySet="Готовые_товары" />
+      <End Role="Доставка" EntitySet="Доставка" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Доставка_Клиент" Association="Self.FK_Доставка_Клиент">
+      <End Role="Клиент" EntitySet="Клиент" />
+      <End Role="Доставка" EntitySet="Доставка" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

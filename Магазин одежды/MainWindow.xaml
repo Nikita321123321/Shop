@@ -1,0 +1,58 @@
+﻿<Window x:Class="Магазин_одежды.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Магазин_одежды"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="722" Width="1234" WindowStartupLocation="CenterScreen">
+    <Grid Background="#FFACACAC" OpacityMask="Black">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="545" Margin="376,35,0,0" VerticalAlignment="Top" Width="483" Background="White">
+            <Image Margin="165,35,166,360" Source="3093536-round.png" Stretch="Fill"/>
+        </Border>
+        <TextBox x:Name="search" HorizontalAlignment="Left" Height="45" Margin="434,288,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="369" Background="White" FontSize="24" FontFamily="Sitka Small">
+            <TextBox.Template>
+                <ControlTemplate>
+                    <Border CornerRadius="12" Padding="2" BorderThickness="1" BorderBrush="Black">
+                        <ScrollViewer Margin="0" x:Name="PART_ContentHost" />
+                    </Border>
+                </ControlTemplate>
+            </TextBox.Template>
+        </TextBox>
+        <TextBox x:Name="search_Copy" HorizontalAlignment="Left" Height="45" Margin="434,392,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="369" Background="White" FontSize="24" FontFamily="Sitka Small">
+            <TextBox.Template>
+                <ControlTemplate>
+                    <Border CornerRadius="12" Padding="2" BorderThickness="1" BorderBrush="Black">
+                        <ScrollViewer Margin="0" x:Name="PART_ContentHost" />
+                    </Border>
+                </ControlTemplate>
+            </TextBox.Template>
+        </TextBox>
+        <Label Content="Логин" HorizontalAlignment="Left" Margin="571,249,0,0" VerticalAlignment="Top" Height="34" Width="103" FontFamily="Sitka Small" FontSize="24"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" Margin="571,353,0,0" VerticalAlignment="Top" Height="34" Width="103" FontFamily="Sitka Small" FontSize="24"/>
+        <Button Content="Войти" HorizontalAlignment="Left" Margin="501,455,0,0" VerticalAlignment="Top" Width="235" Height="45" FontFamily="Sitka Small" FontSize="24" Background="#FF9CECB5" Click="Button_Click"/>
+        <Button Content="Войти в качестве гостя" HorizontalAlignment="Left" Margin="434,613,0,0" VerticalAlignment="Top" Width="369" Height="45" FontFamily="Sitka Small" FontSize="24" Background="#FF9CECB5"/>
+        <Image Margin="42,269,890,108" Source="dd00c7e498c217ab7d22d46d76mp--odezhda-hudi-s-vyshivkoj-anime.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Opacity="0.69">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="13.188"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Margin="908,49,45,298" Source="yXqZBOd-200x200.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Opacity="0.69">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-5.682"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Button Content="Зарегестрироваться" HorizontalAlignment="Left" Margin="434,516,0,0" VerticalAlignment="Top" Width="369" Height="45" FontFamily="Sitka Small" FontSize="24" Background="#FF9CECB5"/>
+
+    </Grid>
+</Window>

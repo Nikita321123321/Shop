@@ -1,0 +1,25 @@
+﻿<Window x:Class="Магазин_одежды.Основное"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Магазин_одежды"
+        mc:Ignorable="d"
+        Title="Основное" Height="722" Width="1234" WindowStartupLocation="CenterScreen">
+    <Grid Background="#FFACACAC">
+        <Button HorizontalAlignment="Left" Margin="1126,601,0,0" VerticalAlignment="Top" Width="90" Height="80" Background="#FF9CECB5" Click="Button_Click">
+            <Image Height="70" Source="icons8-вернуть-100.png" Stretch="Fill" Width="80"/>
+        </Button>
+        <Image Margin="178,256,905,295" Source="icons8-футболка-64.png" Stretch="Fill"/>
+        <Image Margin="551,256,532,295" Source="icons8-доставляется-100.png" Stretch="Fill"/>
+        <Image Margin="914,256,169,295" Source="icons8-группа-пользователей,-мужчина-и-женщина-80.png" Stretch="Fill"/>
+        <Button Content="Ассортимент" HorizontalAlignment="Left" Margin="116,443,0,0" VerticalAlignment="Top" Width="272" Height="45" FontFamily="Sitka Small" FontSize="24" Background="#FF9CECB5" Click="Button_Click_1"/>
+        <Button Content="Доставка" HorizontalAlignment="Left" Margin="485,443,0,0" VerticalAlignment="Top" Width="272" Height="45" FontFamily="Sitka Small" FontSize="24" Background="#FF9CECB5" Click="Button_Click_2"/>
+        <Button Content="Клиенты" HorizontalAlignment="Left" Margin="856,443,0,0" VerticalAlignment="Top" Width="272" Height="45" FontFamily="Sitka Small" FontSize="24" Background="#FF9CECB5" Click="Button_Click_3"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="167" Margin="116,32,0,0" VerticalAlignment="Top" Width="1012" Background="White">
+            <Image Margin="9,9,851,9" Source="3093536-round.png" Stretch="Fill"/>
+        </Border>
+        <Label Content="Магазин одежды 'CaXaR_ница'" HorizontalAlignment="Left" Margin="338,67,0,0" VerticalAlignment="Top" Height="94" Width="732" FontFamily="Segoe Print" FontSize="48"/>
+
+    </Grid>
+</Window>

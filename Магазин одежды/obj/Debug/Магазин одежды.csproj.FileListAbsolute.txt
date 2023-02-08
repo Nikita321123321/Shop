@@ -1,0 +1,36 @@
+C:\Users\1290694\Desktop\Магазин одежды\Магазин одежды\bin\Debug\Магазин одежды.exe.config
+C:\Users\1290694\Desktop\Магазин одежды\Магазин одежды\bin\Debug\Магазин одежды.exe
+C:\Users\1290694\Desktop\Магазин одежды\Магазин одежды\bin\Debug\Магазин одежды.pdb
+C:\Users\1290694\Desktop\Магазин одежды\Магазин одежды\obj\Debug\Магазин одежды.csprojAssemblyReference.cache
+C:\Users\1290694\Desktop\Магазин одежды\Магазин одежды\obj\Debug\MainWindow.g.cs
+C:\Users\1290694\Desktop\Магазин одежды\Магазин одежды\obj\Debug\App.g.cs
+C:\Users\1290694\Desktop\Магазин одежды\Магазин одежды\obj\Debug\Магазин одежды_MarkupCompile.cache
+C:\Users\1290694\Desktop\Магазин одежды\Магазин одежды\obj\Debug\Магазин одежды_MarkupCompile.lref
+C:\Users\1290694\Desktop\Магазин одежды\Магазин одежды\obj\Debug\MainWindow.baml
+C:\Users\1290694\Desktop\Магазин одежды\Магазин одежды\obj\Debug\Магазин одежды.g.resources
+C:\Users\1290694\Desktop\Магазин одежды\Магазин одежды\obj\Debug\Магазин_одежды.Properties.Resources.resources
+C:\Users\1290694\Desktop\Магазин одежды\Магазин одежды\obj\Debug\Магазин одежды.csproj.GenerateResource.cache
+C:\Users\1290694\Desktop\Магазин одежды\Магазин одежды\obj\Debug\Магазин одежды.csproj.CoreCompileInputs.cache
+C:\Users\1290694\Desktop\Магазин одежды\Магазин одежды\obj\Debug\Магазин одежды.exe
+C:\Users\1290694\Desktop\Магазин одежды\Магазин одежды\obj\Debug\Магазин одежды.pdb
+C:\Users\1290694\Desktop\Магазин одежды\Магазин одежды\obj\Debug\Основное.g.cs
+C:\Users\1290694\Desktop\Магазин одежды\Магазин одежды\obj\Debug\Основное.baml
+C:\Users\1290694\Desktop\Магазин одежды\Магазин одежды\obj\Debug\Ассортимент.g.cs
+C:\Users\1290694\Desktop\Магазин одежды\Магазин одежды\obj\Debug\Добваление товара.g.cs
+C:\Users\1290694\Desktop\Магазин одежды\Магазин одежды\obj\Debug\Ассортимент.baml
+C:\Users\1290694\Desktop\Магазин одежды\Магазин одежды\obj\Debug\Добваление товара.baml
+C:\Users\1290694\Desktop\Магазин одежды\Магазин одежды\obj\Debug\Клиенты.g.cs
+C:\Users\1290694\Desktop\Магазин одежды\Магазин одежды\obj\Debug\Клиенты.baml
+C:\Users\1290694\Desktop\Магазин одежды\Магазин одежды\bin\Debug\EntityFramework.dll
+C:\Users\1290694\Desktop\Магазин одежды\Магазин одежды\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\1290694\Desktop\Магазин одежды\Магазин одежды\bin\Debug\EntityFramework.xml
+C:\Users\1290694\Desktop\Магазин одежды\Магазин одежды\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\1290694\Desktop\Магазин одежды\Магазин одежды\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\1290694\Desktop\Магазин одежды\Магазин одежды\obj\Debug\Добавление заказа.g.cs
+C:\Users\1290694\Desktop\Магазин одежды\Магазин одежды\obj\Debug\Магазин одежды_Content.g.cs
+C:\Users\1290694\Desktop\Магазин одежды\Магазин одежды\obj\Debug\Добавление заказа.baml
+C:\Users\1290694\Desktop\Магазин одежды\Магазин одежды\obj\Debug\Магазин одежды.csproj.CopyComplete
+C:\Users\1290694\Desktop\Магазин одежды\Магазин одежды\obj\Debug\Доставки.g.cs
+C:\Users\1290694\Desktop\Магазин одежды\Магазин одежды\obj\Debug\Доставки.baml
+C:\Users\1290694\Desktop\Магазин одежды\Магазин одежды\obj\Debug\Добавление клиента.g.cs
+C:\Users\1290694\Desktop\Магазин одежды\Магазин одежды\obj\Debug\Добавление клиента.baml
